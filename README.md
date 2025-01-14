@@ -30,3 +30,13 @@ The script set the dependencies to specific versions (instead of latest).
 Cypress adds a number of files at this point.
 
 Cypress failed at this point and requested earlier versions of next, react and react-dom (see package.json)
+
+### Axe
+
+Add the [axe plugin](https://www.npmjs.com/package/cypress-axe):
+
+`npm i -D cypress-axe`
+
+Add the e2e.js file and the axe terminal logger under /support.
+
+Both e2e.js and command.js need the line `import 'cypress-axe'` for, respectively, page testing and component testing.
